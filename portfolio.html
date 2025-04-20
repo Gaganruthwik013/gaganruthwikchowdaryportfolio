@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gagan Ruthwik | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; line-height: 1.6; background-color: #f5f7fa; color: #333; transition: background 0.3s ease, color 0.3s ease; }
+    header { background: linear-gradient(135deg, #1e3a8a, #2563eb); color: white; padding: 2rem; text-align: center; position: relative; }
+    section { padding: 2rem 1rem; max-width: 900px; margin: auto; }
+    h2 { color: #1e3a8a; margin-bottom: 1rem; }
+    ul { list-style: none; padding-left: 1rem; }
+    li { margin-bottom: 1rem; }
+    .project, .education, .certification, .contact, .resume-download { margin-bottom: 2rem; background: #fff; padding: 1rem; border-radius: 12px; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .project:hover, .education:hover, .certification:hover, .contact:hover, .resume-download:hover { transform: translateY(-5px); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); }
+    footer { text-align: center; padding: 1rem; background-color: #e2e8f0; color: #555; }
+    a { color: #1e3a8a; text-decoration: none; }
+    .social-icons { margin-top: 1rem; display: flex; justify-content: center; gap: 1.5rem; font-size: 1.5rem; }
+    .social-icons a { color: white; transition: color 0.3s ease; }
+    .social-icons a:hover { color: #93c5fd; }
+    .project a, .certification a { display: inline-block; margin-top: 0.3rem; color: #2563eb; font-weight: 600; }
+    .project a:hover, .certification a:hover { text-decoration: underline; }
+    .dark-mode { background-color: #1e293b; color: #e2e8f0; }
+    .dark-mode .project, .dark-mode .education, .dark-mode .certification, .dark-mode .contact, .dark-mode .resume-download { background-color: #334155; color: #e2e8f0; }
+    .dark-mode footer { background-color: #0f172a; }
+    .toggle-button { position: absolute; top: 20px; right: 20px; background: #fff; color: #1e3a8a; border: none; padding: 0.5rem 1rem; border-radius: 8px; cursor: pointer; font-weight: bold; transition: background 0.3s ease; }
+    .toggle-button:hover { background: #e0e7ff; }
+    nav { background-color: #1e3a8a; padding: 1rem; text-align: center; position: sticky; top: 0; z-index: 100; }
+    nav a { color: white; margin: 0 1rem; font-weight: bold; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    .profile-pic { width: 140px; height: 140px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem; display: block; border: 4px solid white; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); }
+    .resume-download a { display: inline-block; padding: 0.5rem 1rem; background-color: #2563eb; color: white; border-radius: 6px; font-weight: bold; text-align: center; transition: background 0.3s ease; }
+    .resume-download a:hover { background-color: #1e3a8a; }
+  </style>
+</head>
+<body>
+  <header>
+    <button class="toggle-button" onclick="toggleDarkMode()">Toggle Mode</button>
+    <img src="https://i.ibb.co/ycFtGWpW/pic.jpg" alt="Gagan Ruthwik Profile Picture" class="profile-pic" />
+    
+    <h1>Gagan Ruthwik Chowdary Kolluri</h1>
+    <div class="social-icons">
+      <a href="mailto:gaganbublu2005@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/Gaganruthwik013" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/gagan-ruthwik-chowdary-kolluri-869648203" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p>Data Science Enthusiast | Python, SQL, Tableau</p>
+    <p><a href="mailto:gaganbublu2005@gmail.com">gaganbublu2005@gmail.com</a> | +91-9441490852</p>
+  </header>
+
+  <nav>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="resume-download" id="resume">
+    <h2>Download My Resume</h2>
+    <p><a href="https://drive.google.com/file/d/1ljGvLVXmG9SQkXSegoiz0cNVZxeltcYC/view?usp=sharing" target="_blank" download>Click here to download my resume (PDF)</a></p>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2>Skills Summary</h2>
+    <ul>
+      <li>Python, SQL, Tableau, Advanced Excel</li>
+      <li>Data Analysis, Visualization, Clustering, EDA</li>
+      <li>Libraries: Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn</li>
+    </ul>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li class="project">
+        <strong>Top Instagram Influencers Data Analysis</strong> (April 2025)<br />
+        Used K-Means clustering to analyze influencers based on engagement and behavior.<br />
+        <a href="https://github.com/Gaganruthwik013/Top-Instagram-Influencers-Data-Analysis" target="_blank">View on GitHub</a>
+      </li>
+      <li class="project">
+        <strong>Airline Passenger Churn Prediction With Machine Learning</strong> (April 2025)<br />
+        Explored customer satisfaction and trends using Machine Learning techniques to predict churn and customer segmentation.<br />
+        <a href="https://github.com/Gaganruthwik013/Airline-Passenger-Churn-Prediction" target="_blank">View on GitHub</a>
+      </li>
+      <li class="project">
+        <strong>IMDb Movie Analysis</strong> (July 2024)<br />
+        Analyzed movie genres, ratings, and revenues using visual insights.<br />
+        <a href="https://github.com/Gaganruthwik013/IMDB-Movie-analysis" target="_blank">View on GitHub</a>
+      </li>
+      <li class="project">
+        <strong>Anime Recommendation System</strong> (April 2025)<br />
+        Built flask based application for getting anime recommendation based on genre input.<br />
+        <a href="https://github.com/Gaganruthwik013/anime-recommender-api" target="_blank">View on GitHub</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="certifications" id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li class="certification">
+        <strong>Micro Learning in Data Science</strong><br />
+        Certified by Board Infinity — Completed in July 2024
+      </li>
+      <li class="certification">
+        <strong>Data Science Job Simulation</strong><br />
+        Issued by British Airways — Completed in August 2024
+      </li>
+    </ul>
+  </section>
+
+  <section class="education" id="education">
+    <h2>Education</h2>
+    <ul>
+      <li class="education">
+        <strong>Lovely Professional University, Punjab</strong><br />
+        B.Tech in Computer Science - Data Science & ML (2022 - 2026)<br />
+        CGPA: 6.85
+      </li>
+      <li class="education">
+        <strong>Narayana Junior College, Vijayawada</strong><br />
+        Intermediate | 71% (2020 - 2022)
+      </li>
+      <li class="education">
+        <strong>Narayana IIT Academy, Vijayawada</strong><br />
+        10th Grade | 78.8% (2019 - 2020)
+      </li>
+    </ul>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>If you'd like to get in touch, feel free to reach out!</p>
+    <ul>
+      <li>Email: <a href="mailto:gaganbublu2005@gmail.com">gaganbublu2005@gmail.com</a></li>
+      <li>Phone: +91-9441490852</li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/gagan-ruthwik-chowdary-kolluri-869648203" target="_blank">Profile</a></li>
+      <li>GitHub: <a href="https://github.com/Gaganruthwik013" target="_blank">Profile</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; 2025 GRC
+  </footer>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</body>
+</html>
